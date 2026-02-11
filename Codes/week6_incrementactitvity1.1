@@ -1,0 +1,17 @@
+from machine import Pin
+
+import time
+pushpin= Pin(22, Pin.IN, Pin.PULL_UP)
+
+count = 0
+
+while True:
+    pushpin_value = pushpin.value()
+    
+    if pushpin_value == 0:
+        print ("button1 pressed")
+        count = count + 1
+        print (count)
+        time.sleep(0.1)
+    
+    
