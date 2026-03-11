@@ -1,0 +1,14 @@
+from machine import Pin
+import time
+
+slay = time.ticks_us()
+
+print ("falak")
+print ("falak")
+print ("falak")
+print ("falak")
+print ("falak")
+
+salad = time.ticks_us()
+
+print (slay - salad)
